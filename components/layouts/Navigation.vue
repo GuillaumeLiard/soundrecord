@@ -36,22 +36,6 @@ export default {
 		},
 		links: function() {
 			return this.$store.getters['navigation/pages']
-			// return [
-			// 	{
-			// 		url:'/',
-			// 		title: 'Kickstarter',
-			// 	},
-			// 	{
-			// 		url: '/one' ,
-			// 		title: 'one',
-			// 		icon: 'dashboard'
-			// 	},
-			// 	{
-			// 		url: '/two' ,
-			// 		title: 'two',
-			// 		icon: 'dashboard'
-			// 	}
-			// ]
 		}
 	}
 }
