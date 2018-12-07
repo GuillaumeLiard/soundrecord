@@ -6,7 +6,6 @@
 </template>
 
 <script>
-import { mapMutations } from 'vuex'
 export default {
 	props: {
 		title: {
@@ -15,9 +14,9 @@ export default {
 		}
 	},
 	methods: {
-		...mapMutations({
-			toggleDrawer: 'toggleDrawer'
-		})
+		toggleDrawer: function() {
+			this.$store.commit('toggleDrawer')
+		}
 	}
 }
 </script>

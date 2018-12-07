@@ -6,18 +6,22 @@ export const state = function() {
 				url:'/',
 				title: 'Kickstarter',
 			},
-			{ title: 'one', icon: 'dashboard', url: '/one' },
-			{ title: 'two', icon: 'widgets', url: '/two' }
-		],
-		// links: [
-		// 	{ title: 'one', icon: 'dashboard', url: '/one' },
-		// 	{ title: 'two', icon: 'widgets', url: '/two' }
-		// ]
+			{
+				url: '/one' ,
+				title: 'one',
+				icon: 'dashboard'
+			},
+			{
+				url: '/two' ,
+				title: 'two',
+				icon: 'dashboard'
+			}
+		]
 	}
 }
 
 export const getters = {
-	getPageTitle: function(state) {
+	getPageTitleByFullPath: function(state) {
 		return function(payload) {
 			const match = state.pages.filter(page => page.url === payload)
 			return match ? match.length > 0 ? match[0].title : '' : ''

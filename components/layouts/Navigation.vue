@@ -24,34 +24,20 @@
 </template>
 
 <script>
-import { mapGetters, mapMutations } from 'vuex'
 export default {
 	computed: {
-		...mapGetters(['drawer']),
 		drawerModel: {
 			set(drawerState) {
-				this.setDrawerState(drawerState)
-				// this.$store.commit('setDrawerState', drawerState)
+				this.$store.commit('setDrawerState', drawerState)
 			},
 			get() {
-				return this.drawer
+				return this.$store.getters.drawer
 			}
 		},
 		links: function() {
 			return this.$store.state.pages
 		}
-	},
-	methods: {
-		...mapMutations(['setDrawerState']),
-	},
-	data () {
-		return {
-			// links: [
-			// 	{ title: 'Ongoing', icon: 'dashboard', url: '/' },
-			// 	{ title: 'Done', icon: 'widgets', url: '/done' }
-			// ],
-		}
-	},
+	}
 }
 </script>
 

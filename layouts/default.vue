@@ -14,7 +14,6 @@
 </template>
 
 <script>
-import { mapGetters } from 'vuex'
 import Navigation from '~/components/layouts/Navigation.vue'
 import Toolbar from '~/components/layouts/Toolbar.vue'
 export default {
@@ -23,11 +22,9 @@ export default {
 		Navigation
 	},
 	computed: {
-		...mapGetters({
-			getPageTitle: 'getPageTitle'
-		}),
 		title: function() {
-			return this.getPageTitle(this.$route.fullPath)
+			const { getPageTitleByFullPath } = this.$store.getters
+			return getPageTitleByFullPath(this.$route.fullPath)
 		}
 	},
 }
