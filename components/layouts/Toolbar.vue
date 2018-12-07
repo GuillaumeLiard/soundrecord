@@ -15,7 +15,7 @@ export default {
 	},
 	methods: {
 		toggleDrawer: function() {
-			this.$store.commit('toggleDrawer')
+			this.$store.commit('navigation/toggleDrawer')
 		}
 	}
 }

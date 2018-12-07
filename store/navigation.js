@@ -1,18 +1,18 @@
-export const state = function() {
+export const state = () => {
 	return {
 		drawer: false,
 		pages: [
 			{
-				url:'/',
+				fullPath:'/',
 				title: 'Kickstarter',
 			},
 			{
-				url: '/one' ,
+				fullPath: '/one' ,
 				title: 'one',
 				icon: 'dashboard'
 			},
 			{
-				url: '/two' ,
+				fullPath: '/two' ,
 				title: 'two',
 				icon: 'dashboard'
 			}
@@ -23,9 +23,12 @@ export const state = function() {
 export const getters = {
 	getPageTitleByFullPath: function(state) {
 		return function(payload) {
-			const match = state.pages.filter(page => page.url === payload)
+			const match = state.pages.filter(page => page.fullPath === payload)
 			return match ? match.length > 0 ? match[0].title : '' : ''
 		}
+	},
+	pages: function(state) {
+		return state.pages
 	},
 	drawer: function(state) {
 		return state.drawer

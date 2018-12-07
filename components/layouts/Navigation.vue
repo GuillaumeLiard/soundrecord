@@ -4,7 +4,7 @@
 			<nuxt-link
 				v-for="link in links"
 				:key="link.title"
-				:to="link.url"
+				:to="link.fullPath"
 				exact>
 				<v-list-tile>
 					<v-list-tile-action>
@@ -28,14 +28,30 @@ export default {
 	computed: {
 		drawerModel: {
 			set(drawerState) {
-				this.$store.commit('setDrawerState', drawerState)
+				this.$store.commit('navigation/setDrawerState', drawerState)
 			},
 			get() {
-				return this.$store.getters.drawer
+				return this.$store.getters['navigation/drawer']
 			}
 		},
 		links: function() {
-			return this.$store.state.pages
+			return this.$store.getters['navigation/pages']
+			// return [
+			// 	{
+			// 		url:'/',
+			// 		title: 'Kickstarter',
+			// 	},
+			// 	{
+			// 		url: '/one' ,
+			// 		title: 'one',
+			// 		icon: 'dashboard'
+			// 	},
+			// 	{
+			// 		url: '/two' ,
+			// 		title: 'two',
+			// 		icon: 'dashboard'
+			// 	}
+			// ]
 		}
 	}
 }

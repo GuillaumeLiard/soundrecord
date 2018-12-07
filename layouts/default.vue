@@ -23,8 +23,10 @@ export default {
 	},
 	computed: {
 		title: function() {
-			const { getPageTitleByFullPath } = this.$store.getters
-			return getPageTitleByFullPath(this.$route.fullPath)
+			const { fullPath } = this.$route
+			const pages = this.$store.getters['navigation/pages']
+			const match = pages.filter(page => page.fullPath === fullPath)
+			return match.length === 1 ? match[0].title : 'ee'
 		}
 	},
 }
