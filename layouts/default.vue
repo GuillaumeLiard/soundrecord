@@ -1,7 +1,7 @@
 <template>
 	<v-app>
-		<Navigation/>
-		<Toolbar :title="title"/>
+		<NavigationLeft/>
+		<NavigationTop :title="title"/>
 		<v-content>
 			<v-container fluid>
 				<router-view>
@@ -14,12 +14,13 @@
 </template>
 
 <script>
-import Navigation from '~/components/layouts/Navigation.vue'
-import Toolbar from '~/components/layouts/Toolbar.vue'
+import NavigationLeft from '~/components/navigation/left.vue'
+import NavigationTop from '~/components/navigation/top.vue'
+
 export default {
 	components: {
-		Toolbar,
-		Navigation
+		NavigationLeft,
+		NavigationTop
 	},
 	computed: {
 		title: function() {
