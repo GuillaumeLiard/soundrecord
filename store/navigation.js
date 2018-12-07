@@ -21,17 +21,11 @@ export const state = () => {
 }
 
 export const getters = {
-	getPageTitleByFullPath: function(state) {
-		return function(payload) {
-			const match = state.pages.filter(page => page.fullPath === payload)
-			return match ? match.length > 0 ? match[0].title : '' : ''
-		}
+	drawer: function(state) {
+		return state.drawer
 	},
 	pages: function(state) {
 		return state.pages
-	},
-	drawer: function(state) {
-		return state.drawer
 	}
 }
 
