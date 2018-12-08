@@ -1,7 +1,7 @@
-# Kickstarter
+# soundrecord
 
 ## Demo
-https://guillaumeliard.github.io/kickstarter
+https://guillaumeliard.github.io/soundrecord
 
 ## Keywords
 vue vuex nuxt vuetify pwa

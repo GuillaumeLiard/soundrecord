@@ -4,7 +4,7 @@ export const state = () => {
 		pages: [
 			{
 				fullPath:'/',
-				title: 'Kickstarter',
+				title: 'soundrecord',
 			},
 			{
 				fullPath: '/one' ,

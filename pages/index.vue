@@ -1,7 +1,7 @@
 <template>
 	<div class="page">
 		<div class="main">
-			kickstarter
+			soundrecord
 		</div>
 	</div>
 </template>

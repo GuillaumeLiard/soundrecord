@@ -15,7 +15,7 @@
 					</v-list-tile-content>
 				</v-list-tile>
 			</nuxt-link>
-			<a id="github_link" href="https://github.com/GuillaumeLiard/kickstarter" target="_blank" rel="noopener">
+			<a id="github_link" href="https://github.com/GuillaumeLiard/soundrecord" target="_blank" rel="noopener">
 				<img class="github_image" src="~/static/github-corner-right.svg">
 				<span>Github</span>
 			</a>

@@ -1,7 +1,7 @@
 {
-  "name": "kickstarter",
+  "name": "soundrecord",
   "version": "1.0.0",
-  "description": "kickstarter",
+  "description": "soundrecord",
   "author": "GuillaumeLiard",
   "private": true,
   "scripts": {

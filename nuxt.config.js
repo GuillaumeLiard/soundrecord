@@ -2,7 +2,7 @@ const pkg = require('./package')
 
 const routerBase = process.env.DEPLOY_ENV === 'GH_PAGES' ? {
   router: {
-    base: '/kickstarter/'
+    base: '/soundrecord/'
   }
 } : {}
 
@@ -53,9 +53,9 @@ module.exports = {
 	],
 
 	manifest: {
-		"name": "kickstarter list",
-		"short_name": "kickstarter",
-		"start_url": "/kickstarter/",
+		"name": "soundrecord list",
+		"short_name": "soundrecord",
+		"start_url": "/soundrecord/",
 		"display": "fullscreen",
 		"orientation": "any",
 		"background_color": "#121212",
