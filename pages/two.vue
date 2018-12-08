@@ -1,7 +1,7 @@
 <template>
-  <div class="main">
-  	two
-  </div>
+	<div class="main">
+		two
+	</div>
 </template>
 
 <script>
