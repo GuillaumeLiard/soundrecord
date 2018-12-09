@@ -50,6 +50,7 @@ module.exports = {
 	*/
 	modules: [
 		'@nuxtjs/pwa',
+		'@nuxtjs/webpackmonitor'
 	],
 
 	manifest: {
