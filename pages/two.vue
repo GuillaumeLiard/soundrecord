@@ -1,11 +1,15 @@
 <template>
 	<div class="main">
-		two
+		<Generator/>
 	</div>
 </template>
 
 <script>
+import Generator from '~/components/Generator.vue'
 export default {
+	components: {
+		Generator
+	}
 }
 </script>
 
