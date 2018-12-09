@@ -1,11 +1,15 @@
 <template>
 	<div class="main">
-		one
+		<Blank/>
 	</div>
 </template>
 
 <script>
+import Blank from '~/components/Blank'
 export default {
+	components: {
+		Blank
+	}
 }
 </script>
 
