@@ -1,17 +1,17 @@
 <template>
-	<div class="main">
-		<Generator/>
+	<div class="page">
+		<div class="main">
+			soundrecord
+			<Record/>
+		</div>
 	</div>
 </template>
 
 <script>
-import Generator from '~/components/Generator.vue'
-export default {
-	components: {
-		Generator
+	import Record from '~/components/Record'
+	export default {
+		components: {
+			Record
+		}
 	}
-}
 </script>
-
-<style>
-</style>

@@ -2,7 +2,7 @@
 	<div class="record">
 		<audio/>
 		<a v-if="downloadUrl" :href="downloadUrl" download>
-			download generated mp3
+			download generated [blank] mp3
 		</a>
 	</div>
 </template>
