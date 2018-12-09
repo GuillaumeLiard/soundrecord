@@ -10,12 +10,14 @@
 			row
 			wrap
 			>
-			<v-flex xs12>
+			<v-flex xs12 lg12>
 				<v-slider
 				v-model="volume"
 				min=0
 				max=1
-				step=0.1
+				step=0.001
+				:thumb-size="36"
+				thumb-label="always"
 				append-icon="volume_up"
 				prepend-icon="volume_down"
 				></v-slider>
@@ -55,7 +57,6 @@ export default {
 		},
 		createGain: function() {
 			this.gainNode = this.context.createGain()
-			// this.gainNode.gainNode.value = 0
 			this.gainNode.gain.setValueAtTime(this.volume, this.context.currentTime)
 		},
 		createOscillator: function() {
@@ -73,9 +74,7 @@ export default {
 	},
 	watch: {
 		volume: function() {
-			// console.log("gain changed", this.volume);
 			this.gainNode.gain.setValueAtTime(this.volume, this.context.currentTime)
-
 		}
 	}
 }
