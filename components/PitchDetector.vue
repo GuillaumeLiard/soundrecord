@@ -22,11 +22,11 @@ export default {
 	methods: {
 		init: async function() {
 			this.createAudioContext()
-			// await this.createMicrophone()
-			this.createOscillator()
+			await this.createMicrophone()
+			// this.createOscillator()
 			this.createAnalyser()
 			this.connect()
-			this.startOscillator()
+			// this.startOscillator()
 			// console.log("getAnalyserTime", this.getAnalyserTime())
 			const freqArray = this.getAnalyserFrequency()
 			const uniqFreqArray = uniq(freqArray)
