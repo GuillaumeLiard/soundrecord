@@ -15,6 +15,11 @@ export const state = () => {
 				fullPath: '/two' ,
 				title: 'two',
 				icon: 'dashboard'
+			},
+			{
+				fullPath: '/three' ,
+				title: 'Pitch detector',
+				icon: 'dashboard'
 			}
 		]
 	}
