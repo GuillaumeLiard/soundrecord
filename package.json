@@ -16,8 +16,9 @@
   "dependencies": {
     "cross-env": "^5.2.0",
     "lamejs": "^1.2.0",
-    "lodash-es": "^4.17.11",
+    "lodash": "^4.17.11",
     "nuxt": "^2.3.4",
+    "uninstall": "0.0.0",
     "vuetify": "^1.2.4"
   },
   "devDependencies": {

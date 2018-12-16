@@ -7,7 +7,8 @@
 </template>
 
 <script>
-import { uniq } from 'lodash-es'
+// import { uniq } from 'lodash-es'
+import uniq from 'lodash/uniq'
 
 export default {
 	data: function() {
