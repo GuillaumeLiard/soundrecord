@@ -20,6 +20,11 @@ export const state = () => {
 				fullPath: '/three' ,
 				title: 'Pitch detector',
 				icon: 'dashboard'
+			},
+			{
+				fullPath: '/four' ,
+				title: 'File stream download',
+				icon: 'dashboard'
 			}
 		]
 	}
